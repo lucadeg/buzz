@@ -72,3 +72,21 @@ identity.key
 
 # Helm dependency tarballs — regenerable from Chart.lock via `helm dependency build`
 deploy/charts/*/charts/*.tgz
+
+
+# --- HERMES SECURITY & DATA GUARD ---
+*.env
+.env
+.env.*
+*client_secret*.json
+*credentials*.json
+*service_account*.json
+*token*.json
+*.pem
+*.key
+*.p12
+*.pfx
+!*.prisma
+!schema.prisma
+!migrations/
+!*.sql
